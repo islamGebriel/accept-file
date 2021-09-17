@@ -1,5 +1,5 @@
 require 'pedump'
-class PE
+class Pe
   attr_accessor :pe_dump
 
   def initialize(file)
