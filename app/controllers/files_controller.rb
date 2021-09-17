@@ -7,7 +7,7 @@ class FilesController < ApplicationController
   end
 
   def create
-    pe = PE.new(params[:pe_file].tempfile)
+    pe = Pe.new(params[:pe_file].tempfile)
     if pe.pe? 
       uploaded = PortableExecutable.already_uploaded? pe.information
       if uploaded
